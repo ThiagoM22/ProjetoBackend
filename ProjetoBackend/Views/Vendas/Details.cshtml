@@ -1,0 +1,42 @@
+﻿@model ProjetoBackend.Models.Venda
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Venda</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NotaFiscal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NotaFiscal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cliente.Celular)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DataVenda)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DataVenda)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ValorTotal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ValorTotal)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.VendaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

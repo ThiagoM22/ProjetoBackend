@@ -1,0 +1,57 @@
+﻿@model ProjetoBackend.Models.ItemVenda
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>ItemVenda</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="VendaId" class="control-label"></label>
+                <input asp-for="VendaId" class="form-control" value=@ViewData["VendaId"] />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantidade" class="control-label"></label>
+                <input asp-for="Quantidade" class="form-control" id="Quantidade" />
+                <span asp-validation-for="Quantidade" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ProdutoId" class="control-label"></label>
+                <select asp-for="ProdutoId" class="form-control" asp-items="ViewBag.ProdutoId" id="produtoId"></select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ValorUnitario" class="control-label"></label>
+                <input asp-for="ValorUnitario" class="form-control" id="ValorUnitario" />
+                <span asp-validation-for="ValorUnitario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorTotal" class="control-label"></label>
+                <input asp-for="ValorTotal" class="form-control" id="ValorTotal" />
+                <span asp-validation-for="ValorTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+
+    }
+}

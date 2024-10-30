@@ -1,0 +1,41 @@
+﻿<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#produtoId").change(function () {
+            var id = $(this).val();
+            var quantidade = $("#Quantidade").val();
+
+            $.ajax({
+                url: '/ItensVendas/PrecoProduto',
+                data: { id: id },
+                dataType: 'json',
+                success: function (data) {
+                    $("#ValorUnitario").val(data);
+                    var total = data * quantidade;
+                    $("#ValorTotal").val(total);
+                },
+                error: function () {
+                    alert("Erro ao calcular o preço do produto.");
+                }
+            });
+        });
+    });
+
+
+    function formatarTelefone(input) {
+        // Remove todos os caracteres que não sejam números
+        let valor = input.value.replace(/\D/g, '');
+
+        // Limita o número de dígitos a 11 (considerando o DDD e 9 dígitos)
+        valor = valor.substr(0, 11);
+
+        // Aplica a máscara, considerando os dois possíveis formatos
+        valor = valor.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+
+        input.value = valor;
+    }
+
+
+</script>

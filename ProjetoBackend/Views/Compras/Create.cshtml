@@ -1,0 +1,43 @@
+﻿@model ProjetoBackend.Models.Compra
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Compra</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FornecedorId" class="control-label"></label>
+                <input asp-for="FornecedorId" class="form-control" />
+                <span asp-validation-for="FornecedorId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataCompra" class="control-label"></label>
+                <input asp-for="DataCompra" class="form-control" />
+                <span asp-validation-for="DataCompra" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ValorTotal" class="control-label"></label>
+                <input asp-for="ValorTotal" class="form-control" />
+                <span asp-validation-for="ValorTotal" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

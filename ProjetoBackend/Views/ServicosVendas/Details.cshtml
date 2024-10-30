@@ -1,0 +1,30 @@
+﻿@model ProjetoBackend.Models.ServicoVenda
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ServicoVenda</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Servico)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Servico.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Venda)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Venda.VendaId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ServicoVendaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
