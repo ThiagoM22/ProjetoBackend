@@ -97,20 +97,46 @@ body {
         font-size: 64px;
     }
 
+    .Sobre p {
+        font-size: 20px;
+    }
+
 .Cards img {
     height: 70px;
     width: 70px;
 }
 
-.Cards div {
-    width: 463px;
-    height: 493px;
+.Cards {
+    margin-top: -60px;
+    margin-bottom: 100px;
 }
+
+    .Cards h2 {
+        font-size: 40px;
+    }
+
+    .Cards p {
+        font-size: 24px;
+        max-width: 256px;
+        margin: 0px auto 0 px;
+    }
+
+    .Cards div {
+        width: 463px;
+        height: 493px;
+        border-radius: 10px;
+    }
 
 .Qualidade {
     margin-right: 129px;
+    background: #4C0781;
 }
 
 .Preco {
     margin-right: 129px;
+    background: #820AD1;
+}
+
+.Equipe {
+    background: #4C0781;
 }
