@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" style="background-color:#131313">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-0" style="background-color:#131313">
             <div class="container-fluid">
                 <a style="margin-left:37px" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/Logo.png" alt="Alternate Text" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -20,32 +20,32 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" style="font-size:16px">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link  @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active" : "") " asp-area="" asp-controller="Home" asp-action="Index">Pagina Inicial</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Home" asp-action="Index">Pagina Inicial</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link @(ViewContext.RouteData.Values["action"].ToString() == "Sobre" ? "active" : "")" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre Nós</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre Nós</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Clientes" ? "active" : "")" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link  @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Fornecedores" ? "active" : "")" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Fornecedores" asp-action="Index">Fornecedores</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link  @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Categorias" ? "active" : "")" asp-area="" asp-controller="Categorias" asp-action="Index">Categorias de Produtos</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Categorias" asp-action="Index">Categorias de Produtos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link  @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Produtos" ? "active" : "")" asp-area="" asp-controller="Produtos" asp-action="Index">Produtos</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Produtos" asp-action="Index">Produtos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link  @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Servicos" ? "active" : "")" asp-area="" asp-controller="Servicos" asp-action="Index">Servicos</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Servicos" asp-action="Index">Servicos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link  @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Vendas" ? "active" : "")" asp-area="" asp-controller="Vendas" asp-action="Index">Vendas</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Vendas" asp-action="Index">Vendas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light fw-bold custom-link @(ViewContext.RouteData.Values["action"].ToString() == "Index" && ViewContext.RouteData.Values["controller"].ToString() == "Compras" ? "active" : "")" asp-area="" asp-controller="Compras" asp-action="Index">Compras</a>
+                        <li class="nav-item custom-link">
+                            <a class="nav-link text-light fw-bold custom-link" asp-area="" asp-controller="Compras" asp-action="Index">Compras</a>
                         </li>
 
 
@@ -55,39 +55,42 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-
-
     <footer style="background:#131313" class="border-top footer text-light">
-        <div style="display: flex; align-items: center; justify-content: center;" class="container">
+        <div class="container Logo2 justify-content-center">
             <img src="~/img/logo2.png" alt="Alternate Text" />
         </div>
-        <div style="display: flex; flex-direction: column; margin-top:-70px; font-size:13px;">
-            <div style="display: flex; align-items: center;justify-content:end; margin-bottom:-40px; margin-right:100px">
-
+        <div class="RS d-flex flex-column">
+            <div class="WS d-flex align-items-center justify-content-end">
                 <ion-icon style="color:#8A2BE2" name="logo-whatsapp"></ion-icon>
                 <span style="margin-left: 5px;">WhatsApp</span>
             </div>
-            <div style="display: flex; align-items: center;justify-content:end;margin-bottom:-40px;margin-right:103px">
-
+            <div class="INS d-flex align-items-center justify-content-end">
                 <ion-icon style="color:#8A2BE2" name="logo-instagram"></ion-icon>
                 <span style="margin-left: 5px;">Instagram</span>
             </div>
-            <div style="display: flex; align-items: center;justify-content:end;margin-bottom:-35px;margin-right:36px">
-
+            <div class="Vec d-flex align-items-center justify-content-end">
                 <img src="~/img/Vector.svg" alt="Vector Icon" />
                 <span style="margin-left: 5px;">TropTech@gmail.com</span>
             </div>
         </div>
-        <div style="display: flex; align-items: center; justify-content: center;" class="container ">
+        <div class="Direitos container d-flex align-items-center justify-content-center">
             Todos os direitos reservados ℗ TropTech
         </div>
+
     </footer>
+    <!--
+
+
+
+
+
+    -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/ionicons/ionicons.js"></script>
