@@ -20,6 +20,9 @@ namespace ProjetoBackend.Controllers
 
         public IActionResult Sobre()
         {
+            string imagePath = Url.Content("~/img/Vector.png");
+            ViewData["BackgroundImage"] = imagePath;
+            return View();
             return View();
         }
 

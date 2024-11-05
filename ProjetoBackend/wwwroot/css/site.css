@@ -118,7 +118,7 @@ body {
     .Cards p {
         font-size: 24px;
         max-width: 256px;
-        margin: 0px auto 0 px;
+        margin: 0px auto 0px;
     }
 
     .Cards div {
