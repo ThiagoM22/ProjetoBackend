@@ -3,57 +3,67 @@
 @{
     ViewData["Title"] = "Index";
 }
+<div class="container">
 
-<h1>Index</h1>
+    <p class="titulo-cliente fw-bold">Fornecedores</p>
 
-<form asp-action="Search" method="get">
-    <input type="text" name="nome" placeholder="Buscar fornecedor por nome..." />
-    <button type="submit"><ion-icon name="search"></ion-icon>Buscar</button>
-</form>
+    <form asp-action="Search" class="search-container text-end" method="get">
+        <input type="text" name="nome" placeholder="Buscar cliente..." class="search-input" />
+        <button type="submit" class="search-button"><ion-icon name="search"></ion-icon></button>
+    </form>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Celular)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CnpjCpf)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+    <table>
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Celular)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CnpjCpf)
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.FornecedorId">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.FornecedorId">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.FornecedorId">Delete</a>
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Celular)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CnpjCpf)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody style="background:#FCFCFC">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Celular)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CnpjCpf)
+                    </td>
+                    <td class="btn-group dropend">
+                        <a class="more-options" data-bs-toggle="dropdown" aria-expanded="false" _msttexthash="152945" _msthash="398">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#A3A2A2" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu" _mstvisible="0">
+                            <li _mstvisible="1"><a class="dropdown-item" asp-action="Edit" asp-route-id="@item.FornecedorId" _msttexthash="70928" _msthash="399" _mstvisible="2">Editar</a></li>
+                            <li _mstvisible="1"><a class="dropdown-item" a asp-action="Delete" asp-route-id="@item.FornecedorId" _msttexthash="178750" _msthash="400" _mstvisible="2">Excluir</a></li>
+                        </ul>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+    <p>
+        <a asp-action="Create" class="botao-criar fw-semibold">Criar</a>
+    </p>
+
+</div>

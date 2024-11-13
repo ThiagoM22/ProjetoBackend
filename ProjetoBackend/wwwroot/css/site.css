@@ -140,3 +140,158 @@ body {
 .Equipe {
     background: #4C0781;
 }
+
+
+/*-----------------------------Tabelas----------------------------*/
+.botao-criar {
+    background-color: #932BE2;
+    color: white;
+    width: 197px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.titulo-cliente {
+    font-size: 50px;
+    color: #710ABF;
+    margin-bottom: 50px;
+}
+
+.titulo-criar {
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid #D9D9D9;
+    border-radius: 15px 0 0 15px;
+    font-size: 16px;
+    outline: none;
+    height: 40px;
+}
+
+.search-button {
+    background-color: #710ABF;
+    border: none;
+    color: #F8F8F8;
+    padding: 0 15px;
+    border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+}
+
+    .search-button ion-icon {
+        font-size: 20px;
+    }
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid #D9D9D9;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(248, 248, 248, 0.8);
+}
+
+thead tr {
+    background-color: black;
+    color: white;
+}
+
+th, td {
+    padding: 15px 10px;
+    height: 50px;
+    text-align: left;
+    font-size: 16px;
+}
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+td a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.more-options {
+    background-color: transparent;
+    border: none;
+    padding: 15px;
+    padding-top: 0px;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    height: 40px;
+}
+/*--------------------------------------Botoes-------------------------------------*/
+.botao-criar {
+    background-color: #8A2BE2;
+    color: white;
+    width: 283px;
+    height: 49px;
+    border-radius: 5px;
+    font-weight: 300;
+    border: none;
+}
+
+.botao-cancelar {
+    background-color: rgba(138, 43, 226, 0.04);
+    color: white;
+    width: 283px;
+    height: 49px;
+    border-radius: 5px;
+    border: 1px solid #C17DFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: #C17DFF;
+}
+
+.cadastro {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    font-weight: 450;
+}
+
+.text-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-box-input {
+    padding: 15px;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    height: 50px;
+    background: none;
+    font-weight: 400;
+    width: 100%;
+}
