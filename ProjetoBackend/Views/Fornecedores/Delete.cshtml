@@ -15,7 +15,7 @@
             <p class="titulo-criar fw-bold">Fornecedores</p>
             <hr class="border border-dark border-1">
             <h4 class="cadastro fw-medium ">Excluir Fornecedor</h4>
-            <div class="row">
+            <div class="row crow">
                 <div class="titulodelete fw-bold col-2 mb-3"> @Html.DisplayNameFor(model => model.Nome)</div>
                 <div class="conteudodelete col">@Html.DisplayFor(model => model.Nome)</div>
             </div>
@@ -43,16 +43,17 @@
                     @Html.DisplayFor(model => model.CnpjCpf)
                 </div>
             </div>
-            <input type="hidden" asp-for="FornecedorId" class="form-control" />
-
-            <div class="row">
-                <div class="col-6 mt-4 form-group w-100 d-flex">
-                    <form asp-action="Delete">
-                        <input type="submit" value="Excluir" class="botao-criar fw-semibold" />
-                    </form>
-                </div>
-                <div class="col-12 col-md-6 mt-4 d-flex w-100 justify-content-end ">
-                    <a class="botao-cancelar m-0 p-0 fw-semibold" asp-action="Index">Cancelar</a>
+            <div class="form-group">
+                <input type="hidden" asp-for="FornecedorId" class="form-control" />
+                <div class="row crow">
+                    <div class="col-12 col-md-6 mt-4 w-100 d-flex">
+                        <form asp-action="Delete">
+                            <input type="submit" value="Excluir" class="botao-criar fw-semibold" />
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6 mt-4 d-flex w-100 justify-content-end ">
+                        <a class="botao-cancelar m-0 p-0 fw-semibold" asp-action="Index">Cancelar</a>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-1 col-lg-2"> </div>

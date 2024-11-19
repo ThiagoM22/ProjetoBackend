@@ -82,24 +82,16 @@ body {
 }
 
 .Apresentacao {
-    display: flex;
     background: #131313;
-    width: 100%;
 }
 
-.Sobre {
-    width: 710px;
-    margin-left: 125px;
-    margin-right: 125px;
+.Sobre h1 {
+    font-size: 64px;
 }
 
-    .Sobre h1 {
-        font-size: 64px;
-    }
-
-    .Sobre p {
-        font-size: 20px;
-    }
+.Sobre p {
+    font-size: 20px;
+}
 
 .Cards img {
     height: 70px;
@@ -108,7 +100,6 @@ body {
 
 .Cards {
     margin-top: -60px;
-    margin-bottom: 100px;
 }
 
     .Cards h2 {
@@ -118,22 +109,18 @@ body {
     .Cards p {
         font-size: 24px;
         max-width: 256px;
-        margin: 0px auto 0px;
     }
 
     .Cards div {
-        width: 463px;
         height: 493px;
-        border-radius: 10px;
+       
     }
 
 .Qualidade {
-    margin-right: 129px;
     background: #4C0781;
 }
 
 .Preco {
-    margin-right: 129px;
     background: #820AD1;
 }
 
@@ -294,4 +281,13 @@ td a {
     background: none;
     font-weight: 400;
     width: 100%;
+}
+
+.crow {
+    display: flex;
+    gap: 15px;
+    .col-md-6
+
+{
+    flex: 1;
 }
