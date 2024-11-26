@@ -2,3 +2,98 @@
     background: url('@backgroundImage') no-repeat center center fixed;
     background-size: cover;
 }
+
+.Sobre-nos {
+    color: #932BE2;
+    font-size: 60px;
+    margin-bottom: 70px
+}
+
+.QuemSomos {
+    background: #5E0F9A;
+}
+
+    .QuemSomos p {
+        max-width: 600px;
+        font-size: 35px;
+        margin: 0px auto 0px;
+        text-align: center;
+        margin-top: 30px
+    }
+
+    .QuemSomos h4 {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+.Membros {
+    background: #DDDDDD;
+    width: 1621px;
+    height: 1684px;
+    border-radius: 17px;
+}
+
+.Mazzi p {
+    font-size: 25px;
+}
+
+.Bruno {
+}
+
+    .Bruno p {
+        font-size: 32px;
+        max-width: 504px;
+        margin-right: 60px;
+        text-align: right
+    }
+
+    .Bruno img {
+        margin-right: 60px;
+    }
+
+.Luz {
+    margin-left: 430px;
+    margin-top: 100px;
+    margin-right: 60px;
+}
+
+    .Luz p {
+        font-size: 32px;
+        max-width: 504px;
+        margin-left: 60px;
+    }
+
+.Fim {
+    margin-bottom: 200px;
+}
+
+.Bc {
+    background: #DDDDDD;
+    height: 100%;
+}
+
+.Ma img {
+    width: 254px;
+    height: 297px;
+}
+
+.Texto p {
+    margin: 93px 0px 93px;
+    border-end-end-radius: 10px;
+}
+
+.Br {
+    margin: 166px 0px 166px;
+}
+
+.retangulo-cinza {
+    margin-top: 100px;
+    left: 600px;
+    top: 172px;
+    position: absolute; /* Posicionamento em relação ao contêiner pai*/
+    background-color: #DDDDDD;
+    width: 1400px;
+    height: 1472px;
+    z-index: -1;
+    border-radius: 10px;
+}

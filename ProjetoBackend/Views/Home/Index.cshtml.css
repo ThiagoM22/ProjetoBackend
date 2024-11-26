@@ -1,0 +1,60 @@
+﻿body {
+    overflow-x: hidden;
+}
+.Apresentacao {
+    background: #131313;
+}
+
+.Sobre h1 {
+    font-size: 64px;
+}
+
+.Sobre p {
+    font-size: 20px;
+}
+
+.Cards img {
+    height: 70px;
+    width: 70px;
+}
+
+.Cards {
+    margin-top: -60px;
+}
+
+    .Cards h2 {
+        font-size: 40px;
+    }
+
+    .Cards p {
+        font-size: 24px;
+        max-width: 256px;
+    }
+
+    .Cards div {
+        height: 493px;
+    }
+
+.Qualidade {
+    background: #4C0781;
+}
+
+.Preco {
+    background: #820AD1;
+    margin-bottom: 45px;
+}
+
+.Equipe {
+    background: #4C0781;
+}
+.Qualidade p {
+    margin: 0px auto 0px;
+}
+
+.Preco p {
+    margin: 0px auto 0px;
+}
+
+.Equipe p {
+    margin: 0px auto 0px;
+}
