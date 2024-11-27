@@ -14,6 +14,5 @@ namespace ProjetoBackend.Models
         [Display(Name = "Data da Compra")]
         public DateTime? DataCompra { get; set; } = DateTime.Now;
         public double? ValorTotal { get; set; } = 0;
-
     }
 }

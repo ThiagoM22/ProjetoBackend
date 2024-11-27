@@ -292,6 +292,14 @@ td a {
 {
     flex: 1;
 }
-.Butao{
-    color:white;
+
+.Butao {
+    color: white;
+}
+
+.Roxo {
+    color: #932BE2;
+}
+center ~ * {
+    display: none !important;
 }
